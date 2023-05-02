@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="feat: HelloController 및 테스트 코드 작성">
+    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="build: Lombok 세팅">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/dto/HelloResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
@@ -79,6 +81,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -92,6 +97,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "LombokPluginIS_LOMBOK_JPS_FIX_ENABLED": "true",
+    "LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -101,7 +108,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "show.migrate.to.gradle.popup": "false",
     "spring.configuration.checksum": "b06eb3d5174c91124a3f99967c1611d0"
   }
@@ -111,7 +118,7 @@
       <command value="gradle --info" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Gradle.HelloResponseDtoTest">
     <configuration name="HelloControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,42 +165,48 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="spring-start-with-aws [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloResponseDtoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pcjs156.springboot.web.dto.HelloResponseDtoTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="spring-start-with-aws" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloResponseDtoTest.롬복_기능_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--info" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list />
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pcjs156.springboot.web.dto.HelloResponseDtoTest.롬복_기능_테스트&quot;" />
+          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -213,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HelloResponseDtoTest" />
+        <item itemvalue="Gradle.HelloResponseDtoTest.롬복_기능_테스트" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Gradle.HelloControllerTest" />
         <item itemvalue="Gradle.HelloControllerTest.hello가_리턴된다" />
-        <item itemvalue="Gradle.spring-start-with-aws [dependencies]" />
-        <item itemvalue="Gradle.spring-start-with-aws" />
       </list>
     </recent_temporary>
   </component>
@@ -231,6 +244,7 @@
       <updated>1683016739108</updated>
       <workItem from="1683016742242" duration="1698000" />
       <workItem from="1683018464698" duration="1206000" />
+      <workItem from="1683019684675" duration="440000" />
     </task>
     <task id="LOCAL-00001" summary="build: 프로젝트 시작 세팅">
       <created>1683018522957</created>
@@ -281,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683019624144</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="build: Lombok 세팅">
+      <created>1683019702208</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683019702208</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +324,8 @@
     <MESSAGE value="build: 잘못 받아진 spring 종속성 재설치" />
     <MESSAGE value="feat: Spring application entry point 작성" />
     <MESSAGE value="feat: HelloController 및 테스트 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: HelloController 및 테스트 코드 작성" />
+    <MESSAGE value="build: Lombok 세팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: Lombok 세팅" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

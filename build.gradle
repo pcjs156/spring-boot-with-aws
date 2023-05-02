@@ -35,5 +35,15 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation 'junit:junit:4.13.1'
+    // Lombok 관련
+    annotationProcessor('org.projectlombok:lombok:')
     implementation('org.projectlombok:lombok:')
+    testAnnotationProcessor('org.projectlombok:lombok:')
+    testImplementation('org.projectlombok:lombok:')
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
 }
