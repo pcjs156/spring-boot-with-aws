@@ -108,7 +108,7 @@
       <command value="gradle --info" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.spring-start-with-aws [dependencies]">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="spring-start-with-aws [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -149,8 +149,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-start-with-aws.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pcjs156.springboot.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pcjs156.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Gradle.spring-start-with-aws [dependencies]" />
         <item itemvalue="Gradle.spring-start-with-aws" />
       </list>
