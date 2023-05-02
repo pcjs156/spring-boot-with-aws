@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="feat: Spring application entry point 작성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/web/HelloControllerTest.java" afterDir="false" />
+    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="feat: HelloController 및 테스트 코드 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
@@ -94,6 +92,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -228,7 +230,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683016739108</updated>
       <workItem from="1683016742242" duration="1698000" />
-      <workItem from="1683018464698" duration="1133000" />
+      <workItem from="1683018464698" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="build: 프로젝트 시작 세팅">
       <created>1683018522957</created>
@@ -272,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683018991062</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: HelloController 및 테스트 코드 작성">
+      <created>1683019624144</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683019624144</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +302,8 @@
     <MESSAGE value="build: 프로젝트 시작 세팅" />
     <MESSAGE value="build: 잘못 받아진 spring 종속성 재설치" />
     <MESSAGE value="feat: Spring application entry point 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring application entry point 작성" />
+    <MESSAGE value="feat: HelloController 및 테스트 코드 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: HelloController 및 테스트 코드 작성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
