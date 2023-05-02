@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="build: 잘못 받아진 spring 종속성 재설치">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/Application.java" afterDir="false" />
+    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="feat: Spring application entry point 작성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/web/HelloControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
@@ -109,6 +110,52 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="HelloControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pcjs156.springboot.web.HelloControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HelloControllerTest.hello가_리턴된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pcjs156.springboot.web.HelloControllerTest.hello가_리턴된다&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="spring-start-with-aws [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,6 +212,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Gradle.HelloControllerTest" />
+        <item itemvalue="Gradle.HelloControllerTest.hello가_리턴된다" />
         <item itemvalue="Gradle.spring-start-with-aws [dependencies]" />
         <item itemvalue="Gradle.spring-start-with-aws" />
       </list>
@@ -179,7 +228,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683016739108</updated>
       <workItem from="1683016742242" duration="1698000" />
-      <workItem from="1683018464698" duration="352000" />
+      <workItem from="1683018464698" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="build: 프로젝트 시작 세팅">
       <created>1683018522957</created>
@@ -209,7 +258,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683018786854</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="build: 잘못 받아진 spring 종속성 재설치">
+      <created>1683018829332</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683018829332</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Spring application entry point 작성">
+      <created>1683018991061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683018991062</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +292,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build: 프로젝트 시작 세팅" />
     <MESSAGE value="build: 잘못 받아진 spring 종속성 재설치" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: 잘못 받아진 spring 종속성 재설치" />
+    <MESSAGE value="feat: Spring application entry point 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring application entry point 작성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
