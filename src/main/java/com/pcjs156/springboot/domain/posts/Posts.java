@@ -1,5 +1,6 @@
 package com.pcjs156.springboot.domain.posts;
 
+import com.pcjs156.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 // 테이블과 링크될 클래스임을 나타냄
 @Entity
-public class Posts { // Camel case가 underscore naming으로 전환되므로, 테이블 이름은 posts
+public class Posts extends BaseTimeEntity { // Camel case가 underscore naming으로 전환되므로, 테이블 이름은 posts
     // 해당 테이블의 PK 필드
     @Id
     // PK의 생성 규칙을 의미함 (Spring Boot 2.0에서는 GenerationType.IDENTITY를 추가해야 auto-increment됨)
@@ -37,5 +38,10 @@ public class Posts { // Camel case가 underscore naming으로 전환되므로, �
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 }

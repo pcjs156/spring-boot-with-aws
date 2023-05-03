@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="feat: HelloResponseDto 반환 controller 및 테스트 코드 작성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/posts/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/domain/posts/PostRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+    <list default="true" id="719c7bdf-b01f-4456-a2b2-1987e6ec2b33" name="변경" comment="test: 게시글 저장 및 불러오기 테스트 코드 보완&#10;&#10;중복 저장 검사">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/PostsApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/dto/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/web/PostsApiControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/posts/PostsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pcjs156/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/domain/posts/PostRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pcjs156/springboot/domain/posts/PostRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +93,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -109,6 +119,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
+    "last_directory_selection": "C:/workspace/spring-start-with-aws/src/main/java/com/pcjs156/springboot/domain",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "configurable.group.editor",
     "show.migrate.to.gradle.popup": "false",
@@ -120,8 +131,8 @@
       <command value="gradle --info" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PostRepositoryTest.게시글저장_불러오기">
-    <configuration name="HelloControllerTest.helloDto가_리턴된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PostRepositoryTest.BaseTimeEntity_등록">
+    <configuration name="PostRepositoryTest.BaseTimeEntity_등록" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,53 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.pcjs156.springboot.web.HelloControllerTest.helloDto가_리턴된다&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="HelloResponseDtoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.pcjs156.springboot.web.dto.HelloResponseDtoTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="HelloResponseDtoTest.롬복_기능_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.pcjs156.springboot.web.dto.HelloResponseDtoTest.롬복_기능_테스트&quot;" />
+            <option value="&quot;com.pcjs156.springboot.domain.posts.PostRepositoryTest.BaseTimeEntity_등록&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,6 +178,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PostsApiControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pcjs156.springboot.web.PostsApiControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostsApiControllerTest.Posts_수정된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.pcjs156.springboot.web.PostsApiControllerTest.Posts_수정된다&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="spring-start-with-aws.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pcjs156.springboot.Application" />
@@ -228,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PostRepositoryTest.게시글저장_불러오기" />
-        <item itemvalue="Gradle.HelloControllerTest.helloDto가_리턴된다" />
-        <item itemvalue="Gradle.HelloResponseDtoTest" />
-        <item itemvalue="Gradle.HelloResponseDtoTest.롬복_기능_테스트" />
+        <item itemvalue="Gradle.PostRepositoryTest.BaseTimeEntity_등록" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Gradle.PostsApiControllerTest.Posts_수정된다" />
+        <item itemvalue="Gradle.PostsApiControllerTest" />
+        <item itemvalue="Gradle.PostRepositoryTest.게시글저장_불러오기" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +258,7 @@
       <workItem from="1683016742242" duration="1698000" />
       <workItem from="1683018464698" duration="1206000" />
       <workItem from="1683019684675" duration="2378000" />
+      <workItem from="1683117475954" duration="3021000" />
     </task>
     <task id="LOCAL-00001" summary="build: 프로젝트 시작 세팅">
       <created>1683018522957</created>
@@ -318,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683020468923</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test: 게시글 저장 및 불러오기 테스트 코드 보완&#10;&#10;중복 저장 검사">
+      <created>1683117760157</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683117760157</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +362,8 @@
     <MESSAGE value="build: Lombok 세팅" />
     <MESSAGE value="feat: HelloResponseDto 및 테스트 코드 작성" />
     <MESSAGE value="feat: HelloResponseDto 반환 controller 및 테스트 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: HelloResponseDto 반환 controller 및 테스트 코드 작성" />
+    <MESSAGE value="test: 게시글 저장 및 불러오기 테스트 코드 보완&#10;&#10;중복 저장 검사" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: 게시글 저장 및 불러오기 테스트 코드 보완&#10;&#10;중복 저장 검사" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
